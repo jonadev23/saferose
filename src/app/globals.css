@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+
+@layer base {
+  :root {
+    --background: 0 0% 98%; /* Near White */
+    --foreground: 210 20% 15%; /* Darker Slate Blue for better contrast */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 210 20% 15%; /* Darker Slate Blue */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 210 20% 15%; /* Darker Slate Blue */
+
+    --primary: 210 100% 20%; /* Deep Blue #003366 */
+    --primary-foreground: 0 0% 98%; /* White */
+
+    /* Secondary color updated for better contrast with background */
+    --secondary: 210 30% 94%; /* Lighter Grayish Blue - was #f2f2f2 */
+    --secondary-foreground: 210 100% 25%; /* Slightly lighter Deep Blue */
+
+    --muted: 210 20% 88%; /* Muted grayish blue */
+    --muted-foreground: 210 10% 45%; /* Darker Muted grayish blue */
+
+    --accent: 51 100% 50%; /* Gold #FFD700 */
+    --accent-foreground: 210 100% 10%; /* Very Dark Blue/Black for contrast on Gold */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 15% 88%; /* Slightly visible border color */
+    --input: 210 15% 88%; /* Border color for inputs */
+    --ring: 210 100% 50%; /* Brighter Blue for focus rings, matching accent logic */
+
+    --radius: 0.5rem;
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    /* Ensure sidebar variables don't conflict if Sheet uses them */
+    --sidebar-background: 0 0% 100%; /* Default to card/background color */
+    --sidebar-foreground: 210 20% 15%;
+    --sidebar-primary: 210 100% 20%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 30% 94%;
+    --sidebar-accent-foreground: 210 100% 25%;
+    --sidebar-border: 210 15% 88%;
+    --sidebar-ring: 210 100% 50%;
+  }
+
+  .dark {
+    /* Define dark mode colors if needed, using the same logic but inverted */
+    --background: 210 20% 10%; /* Dark Blue/Gray */
+    --foreground: 0 0% 95%; /* Light Gray */
+
+    --card: 210 20% 15%; /* Slightly lighter dark */
+    --card-foreground: 0 0% 95%; /* Light Gray */
+
+    --popover: 210 20% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 210 100% 60%; /* Lighter Blue */
+    --primary-foreground: 210 100% 10%; /* Darker Blue */
+
+    --secondary: 210 15% 20%; /* Darker Gray */
+    --secondary-foreground: 0 0% 90%; /* Lighter Gray */
+
+    --muted: 210 15% 30%;
+    --muted-foreground: 210 10% 60%; /* Muted Light Gray */
+
+    --accent: 51 100% 60%; /* Lighter Gold */
+    --accent-foreground: 51 100% 15%; /* Dark Brown/Black */
+
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 10% 30%; /* Darker border */
+    --input: 210 10% 30%;
+    --ring: 210 100% 60%; /* Lighter Blue for focus rings */
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    /* Ensure sidebar variables don't conflict if Sheet uses them */
+    --sidebar-background: 210 20% 15%; /* Default to card/background color */
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 210 100% 60%;
+    --sidebar-primary-foreground: 210 100% 10%;
+    --sidebar-accent: 210 15% 20%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 210 10% 30%;
+    --sidebar-ring: 210 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Refined hover effects */
+@layer components {
+  /* .category-card { remove or repurpose if needed
+    @apply transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1;
+  } */
+  .featured-card {
+     @apply transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1; /* Added translate */
+  }
+  /* Button transitions are usually handled by ShadCN defaults, this might be redundant */
+  /* .contact-form-button {
+    @apply transition-colors duration-300 ease-in-out;
+  } */
+}
+
+/* Custom Keyframes */
+@layer utilities {
+  @keyframes bounce-slow {
+    0%, 100% {
+      transform: translateY(-5%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+  .animate-bounce-slow {
+    animation: bounce-slow 3s infinite;
+  }
+
+   @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Adjust based on content width */
+  }
+  .animate-marquee {
+    animation: marquee 30s linear infinite; /* Adjust duration as needed */
+    display: inline-block; /* Ensure it behaves correctly */
+    white-space: nowrap; /* Prevent wrapping */
+    will-change: transform; /* Optimize animation performance */
+  }
+  /* Add pause on hover capability */
+  .group:hover .animate-marquee {
+      animation-play-state: paused;
+  }
+}
