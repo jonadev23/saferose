@@ -4,16 +4,16 @@ import Image from 'next/image';
 import Link from "next/link";
 import { EmblaCarousel } from "./embla-carousel";
 
-import product from '@/app/assets/SafeRose/699A0689.jpg';
-import product1 from '@/app/assets/SafeRose/699A0696.jpg';
-import product2 from '@/app/assets/SafeRose/699A0700.jpg';
-import product3 from '@/app/assets/SafeRose/699A0702.jpg';
-import product4 from '@/app/assets/SafeRose/699A0708.jpg';
-import product5 from '@/app/assets/SafeRose/699A0712.jpg';
-import product6 from '@/app/assets/SafeRose/699A0714.jpg';
-import product7 from '@/app/assets/SafeRose/699A0723.jpg';
-import product8 from '@/app/assets/SafeRose/699A0820.jpg';
-import product9 from '@/app/assets/SafeRose/699A0823.jpg';
+import product from '../app/assets/SafeRose/699A0689.jpg';
+import product1 from '../app/assets/SafeRose/699A0696.jpg';
+import product2 from '../app/assets/SafeRose/699A0700.jpg';
+import product3 from '../app/assets/SafeRose/699A0702.jpg';
+import product4 from '../app/assets/SafeRose/699A0708.jpg';
+import product5 from '../app/assets/SafeRose/699A0712.jpg';
+import product6 from '../app/assets/SafeRose/699A0714.jpg';
+import product7 from '../app/assets/SafeRose/699A0723.jpg';
+import product8 from '../app/assets/SafeRose/699A0820.jpg';
+import product9 from '../app/assets/SafeRose/699A0823.jpg';
 
 const slides = [
   {

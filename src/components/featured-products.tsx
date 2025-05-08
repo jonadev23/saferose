@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { ShoppingCart } from 'lucide-react'; // Icon for CTA
 import Link from "next/link"; // Import Link
 
-import product1 from '@/app/assets/SafeRose/699A0831.jpg';
-import product2 from '@/app/assets/SafeRose/699A0739.png';
-import product3 from '@/app/assets/SafeRose/699A0712.jpg';
+import product1 from '../app/assets/SafeRose/699A0831.jpg';
+import product2 from '../app/assets/SafeRose/699A0739.png';
+import product3 from '../app/assets/SafeRose/699A0712.jpg';
 
 // Mock data for featured products
 const featuredProducts = [

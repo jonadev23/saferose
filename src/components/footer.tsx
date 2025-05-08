@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import { Shirt } from "lucide-react";
 
-import SafeRose from '@/app/SafeRose.png';
+import SafeRose from '../app/SafeRose.png';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();

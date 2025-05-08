@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import backgroundImg from '@/app/assets/SafeRose/699A0742.jpg'; // adjust based on Vite or Webpack config
+import backgroundImg from '../app/assets/SafeRose/699A0742.jpg'; // adjust based on Vite or Webpack config
 
 export function AboutSection() {
   return (

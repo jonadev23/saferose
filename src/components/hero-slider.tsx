@@ -16,10 +16,10 @@ import { Button } from "@/components/ui/button"; // Import Button for CTA
 import Link from "next/link"; // Import Link for CTA
 
 
-import slide from '@/app/assets/SafeRose/699A0742.jpg';
-import slide1 from '@/app/assets/SafeRose/699A0845.jpg';
-import slide2 from '@/app/assets/SafeRose/699A0846.jpg';
-import slide3 from '@/app/assets/SafeRose/699A0847.jpg';
+import slide from '../app/assets/SafeRose/699A0742.jpg';
+import slide1 from '../app/assets/SafeRose/699A0845.jpg';
+import slide2 from '../app/assets/SafeRose/699A0846.jpg';
+import slide3 from '../app/assets/SafeRose/699A0847.jpg';
 
 // Mock data for slides
 const slides = [

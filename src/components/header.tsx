@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import * as React from "react";
 
-import SafeRose from '@/app/SafeRose.png';
+import SafeRose from '../app/SafeRose.png';
 
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);

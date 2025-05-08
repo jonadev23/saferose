@@ -10,7 +10,7 @@ export function ContactSection() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className={`bg-[url('@/app/assets/SafeRose/699A0742.jpg')] bg-fixed bg-cover bg-center bg-no-repeat text-primary-foreground py-12 md:py-16 rounded-lg`}>
+      className={`bg-[url('../app/assets/SafeRose/699A0742.jpg')] bg-fixed bg-cover bg-center bg-no-repeat text-primary-foreground py-12 md:py-16 rounded-lg`}>
 
       <div className="container mx-auto px-4">
         <h2 id="contact-heading" className="text-3xl font-bold text-center mb-10 text-primary-foreground">Get In Touch</h2>
