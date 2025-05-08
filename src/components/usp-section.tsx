@@ -30,7 +30,7 @@ const uspItems = [
 
 export function UspSection() {
   return (
-    <section id="usp" aria-labelledby="usp-heading" className="bg-[url('@/app/assets/SafeRose/699A0742.jpg')] bg-fixed bg-cover bg-center bg-no-repeat py-8 md:py-12">
+    <section id="usp" aria-labelledby="usp-heading" className="bg-[url('../app/assets/SafeRose/699A0742.jpg')] bg-fixed bg-cover bg-center bg-no-repeat py-8 md:py-12">
       {/* Optional heading - uncomment if needed
       <h2 id="usp-heading" className="text-3xl font-bold text-center mb-8 text-primary">
         Why Choose Us?
