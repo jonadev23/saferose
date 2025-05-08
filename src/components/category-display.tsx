@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Eye } from 'lucide-react'; // Import Eye icon
 
-import product1 from '../app/assets/SafeRose//699A0723.jpg';
-import product2 from '../app/assets/SafeRose//699A0826.jpg';
-import product3 from '../app/assets/SafeRose//699A0702.jpg';
+import product1 from '../app/assets/SafeRose/699A0723.jpg';
+import product2 from '../app/assets/SafeRose/699A0826.jpg';
+import product3 from '../app/assets/SafeRose/699A0702.jpg';
 
-import product4 from '../app/assets/SafeRose//699A0696.jpg';
+import product4 from '../app/assets/SafeRose/699A0696.jpg';
 
 // Mock data for categories - Added taglines
 const categories = [
